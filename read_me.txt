@@ -1,3 +1,5 @@
+Welcome to the GitHub repo for my personal portfolio! Below is the list of in-progress tasks. The only external code I used for this site was lozad for lazy image handling and js-cookie because handling cookies in vanilla js is a nightmare.
+
 In progress
 ----------------------------
 6.)
@@ -16,10 +18,3 @@ Refine iPad header styling
 
 DETAILS:
 iPadHeaderResizing.js has the code basically ready. Should be based on the device being identified, not just on screen height / width. Alternatively can be based on aspect ratio, but it would be better to have a catch-all for all apple tablet devices. Fuck the other shit.
-
-9.)
-TODO:
-Improve video/img load speed
-
-DETAILS:
-Lozad implemented. Lozad responsive data-srcset not working in safari mobile. Explore responsive JS options for switching to mobile source.
