@@ -1,0 +1,36 @@
+.project-page-header-image {
+	background-image: url("./project-header.jpg");
+	background-position: center;
+	filter: grayscale(100%);
+}
+
+h3 {
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+}
+
+p.description {
+	margin: 0 0 50px 0;
+}
+
+.project-block .content-grid {
+	margin-top: 50px;
+	margin-bottom: 0;
+}
+
+.content-grid img {
+	width: 48%;
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+	.project-block .content-grid {
+		margin-top: 30px;
+	}
+
+	.content-grid img {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}

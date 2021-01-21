@@ -1,0 +1,156 @@
+/* project styling */
+
+#acdelco .project-img {
+	background-position: 10% center;
+	background-size: auto 160%;
+}
+
+#tihli .project-img {
+	background-size: auto 150%;
+	background-position: 0% center;
+}
+
+#nutella .project-img {
+	background-position: center;
+}
+
+/* end project styling */
+
+/* project cascading */
+#bjs-wholesale-club {
+	z-index: 11;
+}
+
+#culturelle {
+	z-index: 10;
+}
+
+#goldbond {
+	z-index: 9;
+}
+
+#acdelco {
+	z-index: 8;
+}
+
+#hell-can-wait {
+	z-index: 7;
+}
+
+#tihli {
+	z-index: 6;
+}
+
+#decent {
+	z-index: 5;
+}
+
+#case-studies {
+	z-index: 4;
+}
+
+#nutella {
+	z-index: 3;
+}
+
+#lbd-site {
+	z-index: 2;
+}
+
+#dnd-compendium {
+	z-index: 1;
+}
+/* end project cascading */
+
+@media screen and (max-width: 768px) {
+	#bjs-wholesale-club .project-img {
+		background-position: 80%;
+	}
+
+	#culturelle .project-img {
+		background-position: 60%;
+	}
+
+	#goldbond .project-img {
+		background-position: 50%;
+	}
+
+	#acdelco .project-img {
+		background-position: center;
+	}
+
+	#hell-can-wait .project-img {
+		background-position: center;
+	}
+
+	#tihli .project-img {
+		background-position: 40%;
+	}
+
+	#decent .project-img {
+		background-position: 65%;
+	}
+
+	#case-studies .project-img {
+		background-position: 65%;
+	}
+
+	#nutella .project-img {
+		background-position: center;
+	}
+
+	#lbd-site .project-img {
+		background-position: center;
+	}
+
+	#dnd-compendium .project-img {
+		background-position: 90%;
+	}
+}
+
+/* ipad styling */
+@media screen and (min-height: 800px) {
+	#bjs-wholesale-club .project-img {
+		background-position: 80%;
+	}
+
+	#culturelle .project-img {
+		background-position: 60%;
+	}
+
+	#goldbond .project-img {
+		background-position: 50%;
+	}
+
+	#acdelco .project-img {
+		background-position: center;
+	}
+
+	#hell-can-wait .project-img {
+		background-position: center;
+	}
+
+	#tihli .project-img {
+		background-position: 40%;
+	}
+
+	#decent .project-img {
+		background-position: 65%;
+	}
+
+	#case-studies .project-img {
+		background-position: 65%;
+	}
+
+	#nutella .project-img {
+		background-position: center;
+	}
+
+	#lbd-site .project-img {
+		background-position: center;
+	}
+
+	#dnd-compendium .project-img {
+		background-position: 90%;
+	}
+}

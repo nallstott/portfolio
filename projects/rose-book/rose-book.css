@@ -1,0 +1,22 @@
+.project-page-header-image {
+	background-image: url("./project-header.jpg");
+	background-position: center;
+	filter: grayscale(100%);
+}
+
+h3 {
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+}
+
+p.description {
+	margin: 0 0 30px 0;
+}
+
+.project-body a {
+	width: 220px;
+	border: 2px solid #cfcfcf;
+	font-size: 15px;
+	padding: 12px;
+}

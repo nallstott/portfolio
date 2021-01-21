@@ -1,0 +1,134 @@
+.home-page-project {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	position: relative;
+}
+
+.home-page-project .project-left,
+.home-page-project .project-right {
+	width: 50%;
+}
+
+.left-oriented .project-left {
+	padding-right: 2vw;
+	position: relative;
+	z-index: 3;
+}
+
+.left-oriented .project-right {
+	height: 80%;
+	z-index: 2;
+	position: relative;
+}
+
+.left-oriented h1 {
+	white-space: nowrap;
+	margin-left: -5vw;
+}
+
+.left-oriented h2 {
+	white-space: nowrap;
+	margin-left: -5vw;
+}
+
+.right-oriented .project-left {
+	height: 80%;
+	z-index: 2;
+	position: relative;
+}
+
+.right-oriented .project-right {
+	padding-left: 2vw;
+	position: relative;
+	z-index: 3;
+}
+
+.right-oriented h2 {
+	white-space: nowrap;
+	margin-left: -10vw;
+	text-align: right;
+}
+
+.home-page-project p {
+	font-size: 2vw;
+}
+
+.project-img {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+}
+
+.project-img-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 6;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.about-nic-block p {
+	font-size: 1.8vw;
+}
+
+.mobile-only a {
+	text-decoration: underline;
+	color: #e9ec6e;
+}
+
+.about-nic-block a {
+	text-decoration: underline;
+	color: #e9ec6e;
+}
+
+/* contact form styling */
+#contact-block {
+	display: none;
+}
+
+.contact-form-div {
+	width: 80%;
+	margin: auto;
+}
+
+.contact-form-div input,
+.contact-form-div textarea {
+	width: 100%;
+	margin: 10px 0;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #cfcfcf;
+	color: white;
+	font-size: 2vw;
+}
+
+.contact-form-div textarea {
+	font-size: 1.3vw;
+	border: 2px solid #cfcfcf;
+	padding: 13px 15px;
+}
+#message {
+	height: 300px;
+	margin-top: 20px;
+}
+
+#submit {
+	position: relative;
+	width: 200px;
+	margin: auto;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%);
+	border: 2px solid #cfcfcf;
+	font-size: 1vw;
+	padding: 12px;
+}
+
+/* end contact form styling */
+
+.clickable-link.subtle {
+	text-decoration: none;
+	color: #cfcfcf;
+}

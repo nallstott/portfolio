@@ -1,0 +1,416 @@
+/* CSS RESET */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	color: #cfcfcf;
+	cursor: none !important;
+}
+
+.cursor {
+	width: 2rem;
+	height: 2rem;
+	border: 2px solid #e9ec6e;
+	border-radius: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 102;
+	pointer-events: none;
+	transition: all 0.3s ease;
+	transition-property: transform;
+	transform-origin: 100% 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.link-hover {
+	transform: scale(2);
+	background-color: #e9ec6e;
+	border: none;
+	color: #1b1b1b;
+	font-family: "Roboto Condensed", sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+/* END CSS RESET */
+
+/* FONT SUPPORT */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@1,700&display=swap");
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+/* END FONT SUPPORT */
+
+body {
+	background: #1b1b1b;
+	position: relative;
+}
+
+.body-container {
+	width: 100vw;
+	height: 100vh;
+	/* mobile viewport bug fix */
+	max-height: -webkit-fill-available;
+}
+
+h1 {
+	-webkit-text-stroke: 2px #e9ec6e;
+	-webkit-text-fill-color: transparent;
+	font-family: "Roboto Condensed", sans-serif;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 8vw;
+}
+
+h2 {
+	-webkit-text-stroke: 2px #e9ec6e;
+	-webkit-text-fill-color: transparent;
+	font-family: "Roboto Condensed", sans-serif;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 5vw;
+}
+
+h3 {
+	-webkit-text-stroke: 1.5px #e9ec6e;
+	-webkit-text-fill-color: transparent;
+	font-family: "Roboto Condensed", sans-serif;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 3vw;
+}
+
+h4 {
+	font-family: "Roboto Condensed", sans-serif;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 3vw;
+	width: 100%;
+	text-align: center;
+	margin-top: 3vh;
+	color: white;
+}
+
+.initial-animation {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	animation-name: dissapear;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1.5s;
+	animation-delay: 3s;
+	background: #1b1b1b;
+	position: fixed;
+	z-index: 5;
+	/* pointer-events: none; */
+}
+
+.initial-animation .first {
+	opacity: 0;
+	transform: translateY(30px);
+	animation-name: animation-up;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1.5s;
+	animation-delay: 0.5s;
+}
+.initial-animation .second {
+	opacity: 0;
+	transform: translateY(30px);
+	animation-name: animation-up;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1.5s;
+	animation-delay: 0.8s;
+}
+.initial-animation .third {
+	opacity: 0;
+	transform: translateY(30px);
+	animation-name: animation-up;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1.5s;
+	animation-delay: 1.1s;
+}
+
+.body-content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	transition: opacity 1s ease-in-out;
+	padding: 0 10vw;
+}
+
+.body-content h2 {
+	width: 100%;
+	text-align: left;
+	margin-top: 5%;
+}
+
+.extra-space {
+	width: 20px;
+	height: 100%;
+}
+
+.headline {
+	width: 100%;
+	height: 20%;
+	margin-top: 3vh;
+	text-align: center;
+	opacity: 0;
+	animation-name: opacity-appear;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1s;
+	animation-delay: 4s;
+}
+
+.nic,
+.ry {
+	width: 50%;
+	max-height: 80%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+}
+
+.nic img,
+.ry img {
+	height: 80vh;
+	margin: 0;
+}
+
+.nic {
+	opacity: 0;
+	animation-name: opacity-appear;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1s;
+	animation-delay: 4.5s;
+}
+
+.ry {
+	opacity: 0;
+	animation-name: opacity-appear;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1s;
+	animation-delay: 5s;
+}
+
+.cta {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(27, 27, 27, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	z-index: 10;
+}
+
+.cta h3 {
+	transition: all 0.5s ease-in-out 0.3s;
+	opacity: 0;
+	transform: translateY(30px);
+}
+
+.cta-appear {
+	opacity: 1;
+}
+
+.cta-h3-appear {
+	opacity: 1 !important;
+	transform: translateY(0) !important;
+}
+
+.title h2 {
+	line-height: 0.7;
+}
+
+.title .second-line {
+	transform: translateX(2vw);
+}
+
+.title {
+	position: absolute;
+	left: 50%;
+	bottom: 30vh;
+	transform: translateX(-55%);
+	white-space: nowrap;
+	z-index: 3;
+}
+
+.mobile-image-gradient {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	transform: translateX(0) !important;
+}
+
+@keyframes opacity-appear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes animation-up {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes dissapear {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.mobile-only {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		-webkit-text-stroke: 1px #e9ec6e;
+		font-size: 11vw;
+	}
+
+	h2 {
+		-webkit-text-stroke: 1px #e9ec6e;
+		font-size: 6vw;
+	}
+
+	.body-content {
+		padding: 0;
+	}
+
+	.headline h1 {
+		padding: 0 5vw;
+		height: 10%;
+		font-size: 11vw;
+	}
+
+	.nic,
+	.ry {
+		height: 90%;
+	}
+
+	.ry img {
+		transform: translateX(-4vw);
+	}
+
+	.nic img {
+		transform: translateX(-2vw);
+	}
+
+	.cta {
+		display: none;
+	}
+
+	.title {
+		position: absolute;
+		left: 50%;
+		bottom: 15vh;
+		transform: translateX(-50%);
+		white-space: nowrap;
+	}
+
+	.cursor {
+		display: none;
+	}
+}
+/* start password page */
+.password-page {
+	position: fixed;
+	width: 100vw;
+	min-height: 100vh;
+	/* mobile viewport bug fix */
+	min-height: -webkit-fill-available;
+	background-color: #1b1b1b;
+	/* display: flex; */
+	display: none;
+	flex-direction: vertical;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	z-index: 101;
+}
+
+.password-page .content {
+	height: auto;
+	display: flex;
+	flex-direction: vertical;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.password-page .illustration {
+	width: 40vw;
+	max-width: 700px;
+	height: auto;
+	transform: translateX(-4%);
+}
+
+.password-page h3,
+.password-page p {
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#secret-box {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: 0;
+}
+
+/* end password page */

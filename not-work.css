@@ -1,0 +1,55 @@
+.projects {
+	position: relative;
+	padding: 150px 10vw;
+}
+
+/* project images */
+
+#roseBook .project-img {
+	background-position: center;
+}
+
+#her .project-img {
+	background-position: center 60%;
+}
+
+#roseBook {
+	z-index: 5;
+}
+
+#isItJustMe {
+	z-index: 4;
+}
+
+#yardXmaripoll {
+	z-index: 3;
+}
+
+#her {
+	z-index: 2;
+}
+
+#dnd-compendium {
+	z-index: 1;
+}
+@media screen and (max-width: 768px) {
+	#roseBook .project-img {
+		background-position: center;
+	}
+
+	#isItJustMe .project-img {
+		background-position: 60%;
+	}
+
+	#yardXmaripoll .project-img {
+		background-position: center;
+	}
+
+	#her .project-img {
+		background-position: center 60%;
+	}
+
+	#dnd-compendium .project-img {
+		background-position: 90%;
+	}
+}
