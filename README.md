@@ -1,0 +1,1 @@
+Welcome to the GitHub repo for my personal portfolio! Below is the list of in-progress tasks. The only external code I used for this site was lozad for lazy image handling and js-cookie because handling cookies in vanilla js is a nightmare.
